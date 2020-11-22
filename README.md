@@ -1,10 +1,10 @@
 # Reflektion
-This is a Mocha - Chai based framework for API Automation, using Mochawesome reporter
+This is a Mocha - Chai based framework for API Automation with JavaScript language, using Mochawesome reporter that creates HTML reports and JSON data report as well.
 1. Checkout the framework on your machine
 
 2. Install Node js from Nodejs website for respective OS platform
 
-3. Open the nodejs command prompt from the Automation folder and execute below command to install packages if they are not imported during checkout
+3. Open the nodejs command prompt from your Automation folder where the framework was checkedout into and execute below command to install packages if they are not imported during checkout
 
  a. Automation Folder>> npm install mocha --save-dev --> This command will create a node_modules folder inside Automation with all mocha inbuilt packages
  
@@ -31,6 +31,10 @@ This is a Mocha - Chai based framework for API Automation, using Mochawesome rep
 
 8. "testdata" folder contains expected response data as well as request body template wherever necessary
 
-9. "libs" folder contains the API library with all the used functions.
+9. "libs" folder contains the API library with all the used functions for GET, POST, PUT, DELETE API requests and 1 for Comparing Actual and Expected response
 
-10. All the test scripts along with a common testsuite script are placed under "tests" folder
+10. All the test scripts along with a common testsuite script are placed under "tests" folder. "verify_GET_APIs.js" --> for GET related testcases. "verify_POST_PUT_DELETE_APIs.js" --> For POST, PUT, DELETE related tests
+
+11. All the API paths and environment related configurations can be found under config folder in config.properties
+
+12. "node_modules" contains all the npm packages installed during mocha installation and other packages installed above.
