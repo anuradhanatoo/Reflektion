@@ -1,4 +1,5 @@
 # Reflektion
+This is a Mocha - Chai based framework for API Automation, using Mochawesome reporter
 1. Checkout the framework on your machine
 2. Install Node js from Nodejs website for respective OS platform
 3. Open the nodejs command prompt from the Automation folder and execute below command to install packages if they are not imported during checkout
@@ -13,3 +14,7 @@
 5. To run the framework, execute below command from Automation framework folder on command prompt:
  >Automation Folder>> .\node_modules\.bin\mocha .\tests\API_TestSuite.js --reporter mochawesome --reporter-options overwrite=false,reportFilename=Reflektion_Test_Report,reportTitle=Reflektion_Test_Report,showPassed=true,inlineAssets=true,quiet=true
 6. To run the bat file for running the automation or integrating with Jenkins --> Double click on ::  run_tests.bat
+7. Reports are generated in html and json data format using mochawesome - reporter and can be found under : mochawesome-report folder.
+8. "testdata" folder contains expected response data as well as request body template wherever necessary
+9. "libs" folder contains the API library with all the used functions.
+10. All the test scripts along with a common testsuite script are placed under "tests" folder
